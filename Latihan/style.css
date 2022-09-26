@@ -1,0 +1,9 @@
+.pendidikan{
+    background-color: hsl(138, 78%, 61%);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ul{color: brown;}
+li{color: royalblue;}
