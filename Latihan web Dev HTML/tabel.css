@@ -1,14 +1,16 @@
 table, tr, td{
-border: 1px solid black;
+border: 1px solid white;
 }
 td{
     text-align: center;
+    color: white;
 }
 h1{
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 h3{
-    color: black;
+    color: white;
     font-weight: bold;
 }
 .submit{
@@ -19,5 +21,13 @@ h3{
     padding: 5px;
 }
 body{
-    background-color: rgb(162, 247, 247);
+    background-image: url(https://wallpapercave.com/wp/wp5852521.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color: white;
+}
+.dropdown {
+  color: white;
 }
