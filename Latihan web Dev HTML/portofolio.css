@@ -1,0 +1,64 @@
+h1{
+    color: white;
+    font-weight: bold;
+}
+h3{
+    color: white;
+    font-weight: bold;
+}
+.submit{
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+body{
+    background-color: black;
+}
+h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    color: white;
+}
+.dropdown {
+  color: black;
+}
+.wave {
+    font-size: 100px;
+    color: white;
+    -webkit-box-reflect: 
+    below -20
+    liner-gradient(transparent, #0005);
+    text-align: center;
+}
+.wave span {
+  font-family: 'Futura', cursive;
+  display: inline-block;
+  animation: wave-animation 1s infinite;
+  animation-delay: calc(0.1s * var(--item));
+}
+@keyframes wave-animation {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+body{
+    font-family: "Futura";
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: gold;
+    color: white;
+}
+.caption{
+    color: white;
+    font-weight: bold;
+}

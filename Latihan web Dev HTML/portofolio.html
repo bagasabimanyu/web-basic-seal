@@ -1,75 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Tabel</title>
-    <link rel="stylesheet" href="tabel.css">
+    <title>Formulir Pendaftaran Kelompok</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+        .modal-header {
+          background: #000000;
+          color: white;
+          font-style: bold;
+        }
+      </style>
 </head>
+
 <body>
-    <h1>Tabel Anggota Kelompok</h1>
-    <p>Nama Lengkap:</p>
-    <input>
-        <input type="text" name="nama" id="nama">
-    <p>Kelompok Daerah:</p>
-    <div class="dropdown">
-        <input type="radio" name="kelompok" class="kelompok">Surabaya</input>
-        <br>   
-        <input type="radio" name="kelompok" class="kelompok">Malang</input>
-        <br>
-        <input type="radio" name="kelompok" class="kelompok">Bali</input>
-        <br>
-        <input type="radio" name="kelompok" class="kelompok">Jogja</input>
-        <br>
-        <input type="radio" name="kelompok" class="kelompok">Bandung</input>
-        <br>
-        <input type="radio" name="kelompok" class="kelompok">Jakarta</input>
-        <br>
-        <input type="radio" name="kelompok" class="kelompok">Semarang</input>
-        <br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+<div class="bg-black text-white">
+  <div class="bg-image" style="background-image: url('https://wallpapercave.com/wp/wp5852521.jpg'); height:100vh; background-repeat: no-repeat; background-size: cover;">
+  <div class="container">
+    <div class="wave">
+        <span style="--item : 1">W</span>
+        <span style="--item : 2">E</span>
+        <span style="--item : 3">L</span>
+        <span style="--item : 4">C</span>
+        <span style="--item : 5">O</span>
+        <span style="--item : 6">M</span>
+        <span style="--item : 7">E</span>
     </div>
-    </form>
-    
-<table>
-    <tr>
-        <td><h3>No.</h3></td>
-        <td><h3>Nama</h3></td>
-        <td><h3>Kelompok</h3></td>
+<h2>Pendaftaran Anggota MPRI</h2>
+<div class="d-flex justify-content-center">
+    <button
+      type="button"
+      class="btn btn-success"
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+    >
+      Formulir Pendaftaran
+    </button>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Register</div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div>
+                <label for="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div>
+                <label for="form-label">Asal Kota</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div>
+                <label for="form-label">Asal Universitas</label>
+                <input type="text" class="form-control" />
+              </div>
+                <div>
+                    <label for="form-label">Jurusan</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div>
+                    <label for="form-label">Angkatan</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div>
+                    <label for="form-label">Email</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div>
+                    <label for="form-label">No. HP</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div>
+                    <label for="form-label">Instagram</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div>
+                    <label for="form-label">Twitter</label>
+                    <input type="text" class="form-control" />
+                </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="tombolsubmit">
+                Submit
+              </button>
+            <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+<div class="container">
+<table class="table table-hover table table-bordered">
+    <caption class="caption">List of College Students</caption>
+<thead class="text-white">
+    <tr class="text-center">
+        <th scope="col">Nama Lengkap</th>
+        <th scope="col">Asal Kota</th>
+        <th scope="col">Universitas</th>
     </tr>
-    <div>
-    <tr>
-        <td>1.</td>
+</thead>
+<tbody class="text-white">
+    <tr class="text-center">
+        <td>Aditya Pratama</td>
+        <td>Surabaya</td>
+        <td>Universitas Brawijaya</td>
+    </tr>
+    <tr class="text-center">
         <td>Bagas Abimanyu</td>
-        <td>1</td>
+        <td>Jakarta</td>
+        <td>Universitas Indonesia</td>
     </tr>
-    <tr>
-        <td>2.</td>
-        <td>Mike Shinoda</td>
-        <td>1</td>
+    <tr class="text-center">
+        <td>Christian Dhika</td>
+        <td>Bandung</td>
+        <td>Universitas Trisaksi</td>
     </tr>
-    <tr>
-        <td>3.</td>
-        <td>Joshua Kimmich</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>4.</td>
-        <td>Trenz Reznor</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>5.</td>
-        <td>Leon Goretzka</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>6.</td>
-        <td>Matthis de light</td>
-        <td>3</td>
-    </tr>
+    
+
+</tbody>
 </table>
+</div>
+</div>
+  </div>
+  </div>
+            <script>
+                const btn = document.getElementById("tombolsubmit");
+                btn.addEventListener("click", function () {
+                  const swalWithBootstrapButtons = Swal.mixin({
+                    customClass: {
+                      confirmButton: "btn btn-success",
+                      cancelButton: "btn btn-danger",
+                    },
+                    buttonsStyling: false,
+                  });
+          
+                  swalWithBootstrapButtons
+                    .fire({
+                      title: "Are you sure?",
+                      text: "Press yes to continue your registration!",
+                      icon: "question",
+                      showCancelButton: true,
+                      confirmButtonText: "Register",
+                      cancelButtonText: "Cancel",
+                      reverseButtons: true,
+                    })
+                    .then((result) => {
+                      if (result.isConfirmed) {
+                        swalWithBootstrapButtons.fire(
+                          "Registered!",
+                          "Your are registered!.",
+                          "success"
+                        );
+                      } else if (
+                        /* Read more about handling dismissals below */
+                        result.dismiss === Swal.DismissReason.cancel
+                      ) {
+                        swalWithBootstrapButtons.fire(
+                          "Cancelled",
+                          "Complete Your Registration!",
+                          "error"
+                        );
+                      }
+                    });
+                });
+              </script>
+              <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+              <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+                integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+                crossorigin="anonymous"
+              ></script>
+              <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                crossorigin="anonymous"
+              ></script>
 </body>
+
 </html>

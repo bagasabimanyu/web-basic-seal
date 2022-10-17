@@ -1,5 +1,3 @@
-.pendidikan{
-}
 .skill{
     padding: 20px;
     margin: 20px;
@@ -34,3 +32,17 @@ ul {
   li a:hover {
     background-color: goldenrod;
   }
+.container{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media screen and (min-width: 800px) {
+  .container {
+      width: 80%;
+      background: green;
+      height: 200px;
+
+  }
+}
